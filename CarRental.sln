@@ -6,7 +6,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 		.gitignore = .gitignore
+		README.md = README.md
+		remarks.md = remarks.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.DatabaseManager", "CarRental.DatabaseManager\CarRental.DatabaseManager.csproj", "{3926780E-90B5-44F8-ABBB-6B2F33E00297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Core", "CarRental.Core\CarRental.Core.csproj", "{2159C4ED-78A1-4991-AFB9-1A2A3AEF3A03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +24,13 @@ Global
 		{F7709408-85F1-4125-8E86-98B7B6084719}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7709408-85F1-4125-8E86-98B7B6084719}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7709408-85F1-4125-8E86-98B7B6084719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3926780E-90B5-44F8-ABBB-6B2F33E00297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3926780E-90B5-44F8-ABBB-6B2F33E00297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3926780E-90B5-44F8-ABBB-6B2F33E00297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3926780E-90B5-44F8-ABBB-6B2F33E00297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2159C4ED-78A1-4991-AFB9-1A2A3AEF3A03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2159C4ED-78A1-4991-AFB9-1A2A3AEF3A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2159C4ED-78A1-4991-AFB9-1A2A3AEF3A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2159C4ED-78A1-4991-AFB9-1A2A3AEF3A03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

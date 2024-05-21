@@ -20,7 +20,7 @@ public class Booking
     [ForeignKey(nameof(CustomerId))]
     public int CustomerId { get; init; }
 
-    public Customer? Customer { get; init; } // navigation property?
+    public Customer? Customer { get; init; } // navigation property
 
     [Required]
     [ForeignKey(nameof(CarId))]
