@@ -1,0 +1,35 @@
+﻿services:
+  
+  
+  # Database
+  carrentaldb:
+    image: postgres
+    restart: always
+    container_name: carrental-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=carrental
+    ports:
+      - "5432:5432"
+    volumes:
+      - carrental-data:/var/lib/postgresql/data
+  
+  
+  # Service
+  carrental.api:
+    image: carrental.api
+    build:
+      context: .
+      dockerfile: CarRental.API/Dockerfile
+    ports:
+      - "8000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__CarRentalDbConnectionString=Host=carrentaldb; Database=carrental; Port=5432; User Id=postgres; Password=password
+    container_name: carrental-api
+
+
+
+volumes:
+  carrental-data:
