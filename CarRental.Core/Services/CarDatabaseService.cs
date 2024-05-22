@@ -10,4 +10,10 @@ public class CarDatabaseService(CarRentalDbContext dbContext)
     {
         return await dbContext.Cars.ToListAsync();
     }
+
+    public async Task<Car?> GetCarAsync(int id)
+    {
+        var car = await dbContext.Set<Car>().FindAsync(id);
+        return car;
+    }
 }

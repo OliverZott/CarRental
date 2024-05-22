@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		README.md = README.md
 		remarks.md = remarks.md
+		Deployment.md = Deployment.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.DatabaseManager", "CarRental.DatabaseManager\CarRental.DatabaseManager.csproj", "{3926780E-90B5-44F8-ABBB-6B2F33E00297}"
